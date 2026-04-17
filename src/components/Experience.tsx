@@ -78,7 +78,7 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="font-[family-name:var(--font-outfit)] text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-12"
+          className=" text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-12"
         >
           Where I&apos;ve worked.
         </motion.h2>
@@ -95,7 +95,7 @@ export default function Experience() {
               className="pb-10 border-b border-border-light last:border-0 last:pb-0"
             >
               <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 mb-1">
-                <h3 className="font-[family-name:var(--font-outfit)] font-semibold text-text-primary text-lg">
+                <h3 className=" font-semibold text-text-primary text-lg">
                   {role.title}
                 </h3>
                 <span className="text-text-tertiary text-xs shrink-0">
@@ -125,7 +125,7 @@ export default function Experience() {
           transition={{ duration: 0.4 }}
           className="mb-10"
         >
-          <h3 className="font-[family-name:var(--font-outfit)] font-semibold text-text-primary text-lg mb-3">
+          <h3 className=" font-semibold text-text-primary text-lg mb-3">
             Education
           </h3>
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
@@ -144,7 +144,7 @@ export default function Experience() {
           viewport={{ once: true }}
           transition={{ duration: 0.4 }}
         >
-          <h3 className="font-[family-name:var(--font-outfit)] font-semibold text-text-primary text-lg mb-3">
+          <h3 className=" font-semibold text-text-primary text-lg mb-3">
             Licenses & Certifications
           </h3>
           <ul className="space-y-1.5">

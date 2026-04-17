@@ -44,7 +44,7 @@ export default function TechStack() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="font-[family-name:var(--font-outfit)] text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-12"
+          className="text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-12"
         >
           What I work with.
         </motion.h2>
@@ -58,7 +58,7 @@ export default function TechStack() {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.08 }}
             >
-              <h3 className="font-[family-name:var(--font-outfit)] font-medium text-text-primary text-sm mb-4">
+              <h3 className="font-medium text-text-primary text-sm mb-4">
                 {cat.title}
               </h3>
               <div className="flex flex-wrap gap-2">

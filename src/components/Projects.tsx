@@ -22,7 +22,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="font-[family-name:var(--font-outfit)] text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-4"
+          className="text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-4"
         >
           Built to ship.
         </motion.h2>

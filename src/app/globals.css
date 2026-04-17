@@ -12,6 +12,7 @@
   --border-light: #E8E8ED;
   --card: #FFFFFF;
   --card-hover: #FAFAFA;
+  --font-sf: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @theme inline {
@@ -26,8 +27,6 @@
   --color-border-light: var(--border-light);
   --color-card: var(--card);
   --color-card-hover: var(--card-hover);
-  --font-display: var(--font-outfit);
-  --font-body: var(--font-inter-tight);
 }
 
 html {
@@ -39,7 +38,7 @@ html {
 body {
   background: var(--bg);
   color: var(--text-primary);
-  font-family: var(--font-inter-tight), -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: var(--font-sf);
 }
 
 ::selection {

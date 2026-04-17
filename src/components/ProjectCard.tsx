@@ -1,8 +1,9 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Play } from "lucide-react";
+import { ArrowUpRight, Play, ChevronLeft, ChevronRight } from "lucide-react";
 import type { Project } from "@/data/projects";
 
 function GithubIcon({ size = 14 }: { size?: number }) {
@@ -13,12 +14,28 @@ function GithubIcon({ size = 14 }: { size?: number }) {
   );
 }
 
+const imageLabels: Record<string, string> = {
+  "/projects/dental-clinic-module-1.png": "Module 1 — AI Chat Agent",
+  "/projects/dental-clinic-module-2.png": "Module 2 — Pre-Appointment Reminder",
+  "/projects/dental-clinic-module-3.png": "Module 3 — Follow-up & Reactivation",
+  "/projects/assessment-payment.png": "Workflow 1 — Payment Flow",
+  "/projects/assessment-report.png": "Workflow 2 — Report Generator",
+};
+
 interface ProjectCardProps {
   project: Project;
   index: number;
 }
 
 export default function ProjectCard({ project, index }: ProjectCardProps) {
+  const [activeImage, setActiveImage] = useState(0);
+  const hasMultipleImages = project.images.length > 1;
+
+  const prevImage = () =>
+    setActiveImage((i) => (i === 0 ? project.images.length - 1 : i - 1));
+  const nextImage = () =>
+    setActiveImage((i) => (i === project.images.length - 1 ? 0 : i + 1));
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -32,20 +49,73 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         project.flagship ? "md:col-span-2" : ""
       }`}
     >
-      {/* Workflow image */}
-      {project.image && (
-        <div className="relative w-full overflow-hidden bg-[#1a1a2e]">
-          <div className="relative w-full aspect-[16/7]">
-            <Image
-              src={project.image}
-              alt={`${project.title} — n8n workflow`}
-              fill
-              className="object-contain p-3 group-hover:scale-[1.02] transition-transform duration-500"
-              sizes={project.flagship ? "(max-width: 768px) 100vw, 66vw" : "(max-width: 768px) 100vw, 50vw"}
-            />
-          </div>
+      {/* Image carousel */}
+      <div className="relative w-full overflow-hidden bg-[#1a1a2e]">
+        <div className="relative w-full aspect-[16/7]">
+          <Image
+            src={project.images[activeImage]}
+            alt={`${project.title} — n8n workflow`}
+            fill
+            className="object-contain p-3 transition-opacity duration-300"
+            sizes={
+              project.flagship
+                ? "(max-width: 768px) 100vw, 66vw"
+                : "(max-width: 768px) 100vw, 50vw"
+            }
+          />
         </div>
-      )}
+
+        {/* Arrows for multi-image */}
+        {hasMultipleImages && (
+          <>
+            <button
+              onClick={prevImage}
+              className="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-black/40 hover:bg-black/60 text-white/80 hover:text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100"
+              aria-label="Previous workflow"
+            >
+              <ChevronLeft size={16} />
+            </button>
+            <button
+              onClick={nextImage}
+              className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-full bg-black/40 hover:bg-black/60 text-white/80 hover:text-white flex items-center justify-center transition-all opacity-0 group-hover:opacity-100"
+              aria-label="Next workflow"
+            >
+              <ChevronRight size={16} />
+            </button>
+          </>
+        )}
+
+        {/* Bottom bar: dots + label */}
+        {hasMultipleImages && (
+          <div className="absolute bottom-0 left-0 right-0 px-3 py-2 bg-gradient-to-t from-black/50 to-transparent flex items-center justify-between">
+            <span className="text-[10px] text-white/70 font-medium">
+              {imageLabels[project.images[activeImage]] ||
+                `Workflow ${activeImage + 1} of ${project.images.length}`}
+            </span>
+            <div className="flex items-center gap-1.5">
+              {project.images.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setActiveImage(i)}
+                  className={`w-1.5 h-1.5 rounded-full transition-all ${
+                    i === activeImage
+                      ? "bg-white w-4"
+                      : "bg-white/40 hover:bg-white/60"
+                  }`}
+                  aria-label={`View workflow ${i + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Multi-workflow badge */}
+        {hasMultipleImages && (
+          <div className="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-black/40 text-[10px] text-white/70 font-medium">
+            {project.images.length} workflows
+          </div>
+        )}
+      </div>
 
       <div className="p-6 sm:p-7 flex flex-col h-full">
         {project.flagship && (
@@ -55,7 +125,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         )}
 
         <h3
-          className={`font-[family-name:var(--font-outfit)] font-semibold text-text-primary leading-snug mb-3 ${
+          className={`font-semibold text-text-primary leading-snug mb-3 ${
             project.flagship ? "text-xl sm:text-2xl" : "text-lg"
           }`}
         >

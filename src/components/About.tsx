@@ -21,11 +21,11 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="font-[family-name:var(--font-outfit)] text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight leading-tight mb-8"
+          className="text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight leading-tight mb-8"
         >
-          Enterprise analytics background.{" "}
+          AI automation developer.{" "}
           <span className="text-text-secondary">
-            AI automation builder.
+            Built on an analytics foundation.
           </span>
         </motion.h2>
 
@@ -36,8 +36,8 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            I&apos;m Christian Rhomel Aguila — a Marketing Analytics Manager at Globe Telecom
-            and an AI Automation Developer building production-grade systems on the side.
+            I&apos;m Christian Rhomel Aguila — an AI Automation Developer who builds
+            systems that eliminate manual work for businesses.
           </motion.p>
 
           <motion.p
@@ -46,9 +46,12 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            With 3 years of enterprise analytics across Globe Telecom and Solaire Resort —
-            working with Snowflake, Databricks, Python, and Power BI — I don&apos;t just connect
-            APIs. I understand the business problem, the data behind it, and the outcome that matters.
+            Before automation, I spent 3 years in enterprise analytics — building data
+            pipelines, transforming messy datasets, and creating reports that executives
+            actually used. That background quietly shapes how I build automation systems
+            today. I know how to structure data so it&apos;s actually usable downstream. I know
+            where workflows break under real business conditions. And I know how to measure
+            whether something is working — not just whether it runs.
           </motion.p>
 
           <motion.p

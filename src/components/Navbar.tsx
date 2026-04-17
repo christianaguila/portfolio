@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-14">
           <a
             href="#"
-            className="font-[family-name:var(--font-outfit)] font-semibold text-sm text-text-primary tracking-tight"
+            className="font-semibold text-sm text-text-primary tracking-tight"
           >
             Christian Rhomel Aguila
           </a>

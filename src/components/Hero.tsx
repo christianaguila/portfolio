@@ -19,7 +19,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-[family-name:var(--font-outfit)] text-5xl sm:text-6xl lg:text-7xl font-semibold text-text-primary tracking-tight leading-[1.05] mb-8"
+          className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-text-primary tracking-tight leading-[1.05] mb-8"
         >
           I build AI systems that{" "}
           <span className="text-text-secondary">do the work</span>{" "}
@@ -33,7 +33,7 @@ export default function Hero() {
           className="text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-10"
         >
           Production-grade automation with n8n, Claude API, and Python.
-          Backed by 3 years of enterprise analytics at Globe Telecom and Solaire Resort.
+          Backed by 3 years of enterprise analytics.
         </motion.p>
 
         <motion.div
