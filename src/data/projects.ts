@@ -25,6 +25,16 @@ export const projects: Project[] = [
     flagship: true,
   },
   {
+  title: "AI YouTube Content Package Generator",
+  description:
+    "Drop a video in Google Drive, get a complete publish-ready content package in under 5 minutes — title, description, chapters, Shorts candidates, and rendered thumbnail.",
+  stack: ["n8n", "AssemblyAI", "Claude API", "APITemplate.io", "Google Drive", "Google Docs"],
+  details:
+    "End-to-end automation for YouTube creators. AssemblyAI transcribes the video with speaker labels and auto-generated chapters, Claude generates SEO-optimized titles, first-person descriptions, ranked Shorts candidates with hooks and captions, and thumbnail concepts. APITemplate.io renders a branded thumbnail dynamically. Everything saves to a dated, organized Google Drive folder per video. Built-in word-level timestamp grounding prevents AI hallucination of chapter times. Cost per video: $0.06 talking head, $0.33 long-form podcast.",
+  images: ["/projects/youtube-content-package.png"],
+  flagship: true,
+  },
+  {
     title: "AI Social Media Content Calendar Generator",
     description:
       "Client fills a form, Claude generates a full monthly content calendar, Google Slides API builds the deck, Gmail delivers it — under 60 seconds.",
