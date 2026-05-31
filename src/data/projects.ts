@@ -96,4 +96,20 @@ export const projects: Project[] = [
       "Automated executive reporting: daily scheduled workflow reads sales data from Google Sheets, Claude generates comprehensive HTML reports with trend observations, actionable recommendations, and KPI highlights, delivered via Gmail.",
     images: ["/projects/sales-reporting.png"],
   },
+  {
+    title: "GoHighLevel CRM — Real Estate Full Customer Lifecycle Automation",
+    description:
+      "End-to-end CRM and marketing automation for a Metro Manila real estate brokerage — from first inquiry to closed deal, with zero manual follow-up required from the broker.",
+    stack: ["GoHighLevel", "CRM & Pipeline", "Email Automation", "SMS Automation", "Calendar Automation", "Lead Segmentation"],
+    details:
+      "Built a complete 9-stage sales pipeline (New Inquiry → Closed Won / Long-Term Nurture) with 8 modular workflows covering: 7-day lead follow-up sequence with Wait-for-Reply branching, automatic hot/warm/cold/investor tagging on form submission, property viewing calendar with 4 automated SMS reminders, 12-month cold lead nurture loop with monthly market updates, and post-viewing review request sequences for both non-converting and closed-won leads. Every pipeline stage updates automatically based on lead behavior — no manual intervention. Broker has full visibility at all times; system scales from 1 lead to 1,000 without additional effort.",
+    images: [
+      "/projects/ghl-real-estate-pipeline-1.png",
+      "/projects/ghl-real-estate-pipeline-2.png",
+      "/projects/ghl-real-estate-workflows.png",
+      "/projects/ghl-real-estate-funnel.png",
+      "/projects/ghl-lead-inquiry-workflow.png",
+    ],
+    flagship: true,
+  },
 ];

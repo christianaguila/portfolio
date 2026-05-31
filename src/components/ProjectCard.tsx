@@ -20,6 +20,11 @@ const imageLabels: Record<string, string> = {
   "/projects/dental-clinic-module-3.png": "Module 3 — Follow-up & Reactivation",
   "/projects/assessment-payment.png": "Workflow 1 — Payment Flow",
   "/projects/assessment-report.png": "Workflow 2 — Report Generator",
+  "/projects/ghl-real-estate-pipeline-1.png": "9-Stage Sales Pipeline",
+  "/projects/ghl-real-estate-pipeline-2.png": "Pipeline — Qualified Leads View",
+  "/projects/ghl-real-estate-workflows.png": "8 Automation Workflows",
+  "/projects/ghl-real-estate-funnel.png": "Lead Capture Funnel Page",
+  "/projects/ghl-lead-inquiry-workflow.png": "Lead Inquiry Automation — 7-Day Sequence",
 };
 
 interface ProjectCardProps {
@@ -112,7 +117,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         {/* Multi-workflow badge */}
         {hasMultipleImages && (
           <div className="absolute top-2 right-2 px-2 py-0.5 rounded-md bg-black/40 text-[10px] text-white/70 font-medium">
-            {project.images.length} workflows
+            {project.images.length} screenshots
           </div>
         )}
       </div>
