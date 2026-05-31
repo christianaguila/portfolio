@@ -36,7 +36,7 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            I&apos;m Christian Rhomel Aguila — an AI Automation Developer who builds
+            I&apos;m Christian Rhomel Aguila, an AI Automation Developer who builds
             systems that eliminate manual work for businesses.
           </motion.p>
 
@@ -46,12 +46,12 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Before automation, I spent 3 years in enterprise analytics — building data
+            Before automation, I spent 3 years in enterprise analytics: building data
             pipelines, transforming messy datasets, and creating reports that executives
             actually used. That background quietly shapes how I build automation systems
             today. I know how to structure data so it&apos;s actually usable downstream. I know
             where workflows break under real business conditions. And I know how to measure
-            whether something is working — not just whether it runs.
+            whether something is working, not just whether it runs.
           </motion.p>
 
           <motion.p
@@ -60,9 +60,9 @@ export default function About() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
           >
-            My automation workflows run on self-hosted n8n — deployed on my own VPS with Docker,
+            My automation workflows run on self-hosted n8n, deployed on my own VPS with Docker,
             Traefik, and SSL. No vendor lock-in, no per-execution fees, full control. Combined
-            with the Claude API, I build systems that don&apos;t just automate tasks — they make
+            with the Claude API, I build systems that don&apos;t just automate tasks. They make
             intelligent decisions.
           </motion.p>
         </div>

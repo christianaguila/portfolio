@@ -15,16 +15,16 @@ function GithubIcon({ size = 14 }: { size?: number }) {
 }
 
 const imageLabels: Record<string, string> = {
-  "/projects/dental-clinic-module-1.png": "Module 1 — AI Chat Agent",
-  "/projects/dental-clinic-module-2.png": "Module 2 — Pre-Appointment Reminder",
-  "/projects/dental-clinic-module-3.png": "Module 3 — Follow-up & Reactivation",
-  "/projects/assessment-payment.png": "Workflow 1 — Payment Flow",
-  "/projects/assessment-report.png": "Workflow 2 — Report Generator",
+  "/projects/dental-clinic-module-1.png": "Module 1: AI Chat Agent",
+  "/projects/dental-clinic-module-2.png": "Module 2: Pre-Appointment Reminder",
+  "/projects/dental-clinic-module-3.png": "Module 3: Follow-up & Reactivation",
+  "/projects/assessment-payment.png": "Workflow 1: Payment Flow",
+  "/projects/assessment-report.png": "Workflow 2: Report Generator",
   "/projects/ghl-real-estate-pipeline-1.png": "9-Stage Sales Pipeline",
-  "/projects/ghl-real-estate-pipeline-2.png": "Pipeline — Qualified Leads View",
+  "/projects/ghl-real-estate-pipeline-2.png": "Pipeline: Qualified Leads View",
   "/projects/ghl-real-estate-workflows.png": "8 Automation Workflows",
   "/projects/ghl-real-estate-funnel.png": "Lead Capture Funnel Page",
-  "/projects/ghl-lead-inquiry-workflow.png": "Lead Inquiry Automation — 7-Day Sequence",
+  "/projects/ghl-lead-inquiry-workflow.png": "Lead Inquiry Automation: 7-Day Sequence",
 };
 
 interface ProjectCardProps {
@@ -59,7 +59,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="relative w-full aspect-[16/7]">
           <Image
             src={project.images[activeImage]}
-            alt={`${project.title} — n8n workflow`}
+            alt={`${project.title} screenshot`}
             fill
             className="object-contain p-3 transition-opacity duration-300"
             sizes={

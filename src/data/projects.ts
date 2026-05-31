@@ -11,12 +11,12 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "GoHighLevel CRM — Real Estate Full Customer Lifecycle Automation",
+    title: "GoHighLevel CRM: Real Estate Full Customer Lifecycle Automation",
     description:
-      "End-to-end CRM and marketing automation for a Metro Manila real estate brokerage — from first inquiry to closed deal, with zero manual follow-up required from the broker.",
+      "End-to-end CRM and marketing automation for a Metro Manila real estate brokerage. From first inquiry to closed deal, with zero manual follow-up required from the broker.",
     stack: ["GoHighLevel", "CRM & Pipeline", "Email Automation", "SMS Automation", "Calendar Automation", "Lead Segmentation"],
     details:
-      "Built a complete 9-stage sales pipeline (New Inquiry → Closed Won / Long-Term Nurture) with 8 modular workflows covering: 7-day lead follow-up sequence with Wait-for-Reply branching, automatic hot/warm/cold/investor tagging on form submission, property viewing calendar with 4 automated SMS reminders, 12-month cold lead nurture loop with monthly market updates, and post-viewing review request sequences for both non-converting and closed-won leads. Every pipeline stage updates automatically based on lead behavior — no manual intervention. Broker has full visibility at all times; system scales from 1 lead to 1,000 without additional effort.",
+      "Built a complete 9-stage sales pipeline (New Inquiry to Closed Won / Long-Term Nurture) with 8 modular workflows covering: 7-day lead follow-up sequence with Wait-for-Reply branching, automatic hot/warm/cold/investor tagging on form submission, property viewing calendar with 4 automated SMS reminders, 12-month cold lead nurture loop with monthly market updates, and post-viewing review request sequences for both non-converting and closed-won leads. Every pipeline stage updates automatically based on lead behavior. No manual intervention. Broker has full visibility at all times; system scales from 1 lead to 1,000 without additional effort.",
     images: [
       "/projects/ghl-real-estate-pipeline-1.png",
       "/projects/ghl-real-estate-pipeline-2.png",
@@ -29,7 +29,7 @@ export const projects: Project[] = [
   {
     title: "Dental Clinic AI Automation System",
     description:
-      "Full AI receptionist for Heavenly Smile Dental Clinic Manila — 3-module system handling bookings, reminders, and patient reactivation via Facebook Messenger.",
+      "Full AI receptionist for Heavenly Smile Dental Clinic Manila. A 3-module system handling bookings, reminders, and patient reactivation via Facebook Messenger.",
     stack: ["n8n", "Claude API", "Facebook Messenger", "Google Calendar", "Google Sheets"],
     details:
       "AI Chat Agent books/reschedules/cancels appointments via Messenger, checks Google Calendar availability, and logs to CRM. Pre-appointment reminders run daily at 9AM. Follow-up module sends thank-you messages and monthly reactivation campaigns for patients 60+ days inactive.",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
   title: "AI YouTube Content Package Generator",
   description:
-    "Drop a video in Google Drive, get a complete publish-ready content package in under 5 minutes — title, description, chapters, Shorts candidates, and rendered thumbnail.",
+    "Drop a video in Google Drive, get a complete publish-ready content package in under 5 minutes: title, description, chapters, Shorts candidates, and rendered thumbnail.",
   stack: ["n8n", "AssemblyAI", "Claude API", "APITemplate.io", "Google Drive", "Google Docs"],
   details:
     "End-to-end automation for YouTube creators. AssemblyAI transcribes the video with speaker labels and auto-generated chapters, Claude generates SEO-optimized titles, first-person descriptions, ranked Shorts candidates with hooks and captions, and thumbnail concepts. APITemplate.io renders a branded thumbnail dynamically. Everything saves to a dated, organized Google Drive folder per video. Built-in word-level timestamp grounding prevents AI hallucination of chapter times. Cost per video: $0.06 talking head, $0.33 long-form podcast.",
@@ -53,7 +53,7 @@ export const projects: Project[] = [
   {
     title: "AI Social Media Content Calendar Generator",
     description:
-      "Client fills a form, Claude generates a full monthly content calendar, Google Slides API builds the deck, Gmail delivers it — under 60 seconds.",
+      "Client fills a form, Claude generates a full monthly content calendar, Google Slides API builds the deck, Gmail delivers it. Under 60 seconds.",
     stack: ["n8n", "Claude API", "Google Slides API", "Google Forms", "Gmail"],
     details:
       "End-to-end automated content planning. Form submission triggers Claude to generate a structured monthly calendar in JSON, which is then transformed into a polished Google Slides presentation and emailed to the client.",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     title: "Automated Client Assessment Pipeline",
     description:
-      "Stripe payment triggers form delivery, Claude generates a personalized business report as PDF, emailed automatically — zero human involvement.",
+      "Stripe payment triggers form delivery, Claude generates a personalized business report as PDF, emailed automatically. Zero human involvement.",
     stack: ["n8n", "Stripe", "Typeform", "Claude API", "Gmail", "PDF"],
     details:
       "Complete paid assessment flow: Stripe payment confirmation sends form link, client submission triggers Claude analysis, generates personalized business report, converts to PDF via pdfmunk, and delivers via email.",
