@@ -54,17 +54,6 @@ export default function About() {
             whether something is working, not just whether it runs.
           </motion.p>
 
-          <motion.p
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-          >
-            My automation workflows run on self-hosted n8n, deployed on my own VPS with Docker,
-            Traefik, and SSL. No vendor lock-in, no per-execution fees, full control. Combined
-            with the Claude API, I build systems that don&apos;t just automate tasks. They make
-            intelligent decisions.
-          </motion.p>
         </div>
       </div>
     </SectionWrapper>

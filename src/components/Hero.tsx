@@ -6,19 +6,10 @@ export default function Hero() {
   return (
     <section className="min-h-[90vh] flex items-center justify-center px-6">
       <div className="max-w-3xl mx-auto text-center">
-        <motion.p
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-text-secondary text-sm tracking-wide mb-4"
-        >
-          Data Analytics → AI Automation
-        </motion.p>
-
         <motion.h1
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
           className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-text-primary tracking-tight leading-[1.05] mb-6"
         >
           You&apos;re not understaffed.{" "}
