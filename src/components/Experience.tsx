@@ -78,10 +78,21 @@ export default function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className=" text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-12"
+          className=" text-3xl sm:text-4xl font-semibold text-text-primary tracking-tight mb-4"
         >
           Where I&apos;ve worked.
         </motion.h2>
+
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-text-secondary text-base leading-relaxed mb-12"
+        >
+          3 years inside enterprise data pipelines taught me exactly where the manual work hides.
+          That&apos;s what I now build systems to eliminate.
+        </motion.p>
 
         {/* Roles */}
         <div className="space-y-10 mb-16">

@@ -10,30 +10,29 @@ export default function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-text-secondary text-sm tracking-wide mb-6"
+          className="text-text-secondary text-sm tracking-wide mb-4"
         >
-          AI Automation Specialist / Developer
+          Data Analytics → AI Automation
         </motion.p>
 
         <motion.h1
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-text-primary tracking-tight leading-[1.05] mb-8"
+          className="text-5xl sm:text-6xl lg:text-7xl font-semibold text-text-primary tracking-tight leading-[1.05] mb-6"
         >
-          I build AI systems that{" "}
-          <span className="text-text-secondary">do the work</span>{" "}
-          so you don&apos;t have to.
+          You&apos;re not understaffed.{" "}
+          <span className="text-text-secondary">You&apos;re under-automated.</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-10"
+          className="text-text-secondary text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-8"
         >
-          Production-grade automation with n8n, Claude API, and Python.
-          Backed by 3 years of enterprise analytics.
+          I build AI systems that respond instantly, follow up for days, and never drop a lead
+          so your team focuses on closing, not chasing.
         </motion.p>
 
         <motion.div
